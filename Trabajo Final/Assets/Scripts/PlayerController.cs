@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
 
+    //In the editor, add your wayPoint gameobject to the script.
+    public GameObject wayPoint;
+    //This is how often your waypoint's position will update to the player's position
+    private float timer = 0.5f;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -56,6 +61,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(25);
+        }
+
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0)
+        {
+            //The position of the waypoint will update to the player's position
+            UpdatePosition();
+            timer = 0.5f;
         }
     }
 
@@ -115,5 +131,11 @@ public class PlayerController : MonoBehaviour
             Destroy(otherCollider.gameObject);
             Destroy(gameObject);
         }
+    }
+
+    void UpdatePosition()
+    {
+        //The wayPoint's position will now be the player's current position.
+        wayPoint.transform.position = transform.position;
     }
 }
