@@ -11,5 +11,11 @@ public class DetectCollisions : MonoBehaviour
             Destroy(otherTrigger.gameObject);
             Destroy(gameObject);
         }
+
+        if (otherTrigger.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(otherTrigger.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

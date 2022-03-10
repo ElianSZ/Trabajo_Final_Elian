@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5590661663863653832}
   m_Layer: 0
   m_Name: Corridor Walls
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 5857394262103235559}
   m_Layer: 0
   m_Name: Corridor Passthrough
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0009373297, g: 0.000007311726, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.00093732466, g: 0.0000073116903, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6143,6 +6143,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5821324820269057581, guid: 31966d69108969f4295781af172db6ea, type: 3}
   shooter1: {fileID: 1454340965}
   shooter2: {fileID: 816264003}
+  explosionParticleSystem: {fileID: 8856629437242833157, guid: fca4c80c52330524cbd4309c118af89c, type: 3}
 --- !u!1001 &581433999
 PrefabInstance:
   m_ObjectHideFlags: 0
